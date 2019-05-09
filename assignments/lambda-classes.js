@@ -37,10 +37,10 @@ class Student extends Person {
         console.log(`Today we are learning about ${subject}.`); 
       };
       PRAssignment(subject) {
-        console.log(`${student.name} has submitted a PR for ${subject}.`); 
+        console.log(`${this.name} has submitted a PR for ${subject}.`); 
       };
       sprintChallenge(subject) {
-        console.log(`${student.name} has begun sprint challenge on ${subject}.`); 
+        console.log(`${this.name} has begun sprint challenge on ${subject}.`); 
       };
 }
 
@@ -124,4 +124,13 @@ const brad = new Student({
   });
 
 
+  console.log(brad.location); // DC
+  jeff.demo("javascript"); // Today we are learning about javascript
+  console.log(jenny.sprintChallenge("Node")); // Jenny has begun sprint challenge on Node
+  console.log(tom.name); // Tom
+  console.log(phil.age); //23 
+  console.log(fred.grade(jenny, 'React')); //Jenny receives a perfect score on React.
+  console.log(jeff.favLanguage); //Swift 
+  console.log(brad.PRAssignment("javascript")); // Brad has submitted a PR for javascript.
+  console.log(phil.standUp("web20_sprint3")); // Phil announces to web20_sprint3, @channel standy times!​​​​​
   
